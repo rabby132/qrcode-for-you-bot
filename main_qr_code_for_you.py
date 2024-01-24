@@ -20,13 +20,13 @@ def help_sent(message):
 
 @bot.message_handler(func=lambda message: True)
 def send_qr(message):
-    log(f"{bot_name} log:\n\nText from user {message.chat.id}:\n\n{message.text}")
+    log(f"{Dogbot Dwonloder} log:\n\nText from user {message.chat.id}:\n\n{message.text}")
     generate_qr(message.chat.id, message.text)
     output_file_path = f"{output_folder}/{message.chat.id}.png"
     with open(output_file_path, 'rb') as photo:
         bot.send_photo(message.chat.id, \
                         photo, \
                         # reply_to_message_id=message.message_id, \
-                        caption = f"{bot_username}\n\n{message.text}")
+                        caption = f"{@dogdwlbot}\n\n{message.text}")
     
 bot.infinity_polling()
