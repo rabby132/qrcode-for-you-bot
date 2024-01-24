@@ -2,12 +2,12 @@ import os
 
 # settings
 output_folder = "./output"
-bot_api = os.environ["QRCODE_FOR_YOU_BOT_API"]
+bot_api = os.environ["6836264981:AAGd2EPZXoHuZK4B5TxjcgbcwgBnFUtE8w8"]
 send_logs = True # if is set to True 'LOG_CHANNEL_ID' should be defined env
 
 # names
-bot_name = "QR-Code For You Bot"
-bot_username = "@qrcode_for_you_bot"
+bot_name = "Dogbot Dwonloder"
+bot_username = "@dogdwlbot"
 
 # messages
 start_cmd_msg = '''Hi, send me a text and I'll generate its qrcode for you 😉'''
